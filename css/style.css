@@ -1,0 +1,164 @@
+:root {
+  --accent-color: #0066ff;
+  --main-text-color: #151515;
+  --second-text-color: #ffffff;
+  --main-bg-color: #ffffff;
+}
+/* ------------------------GLOBAL STYLE---------------------- */
+html {
+  box-sizing: border-box;
+}
+/* це також робимо для футера */
+html,
+body {
+  height: 100%;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+/* притиснути футер до кінця сторінки */
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  flex-grow: 1;
+}
+/* -------------------------HEADER------------------------------- */
+.header {
+  background-color: var(--main-text-color);
+}
+.header-main {
+  background-color: transparent;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.header__inner {
+  padding-top: 40px;
+  padding-bottom: 45px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.menu-list {
+  display: flex;
+  gap: 35px;
+}
+
+.menu-list__link {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.19;
+}
+/* HERO */
+.hero {
+  padding-top: 250px;
+  padding-bottom: 50px;
+  color: var(--second-text-color);
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
+.hero__title {
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 1.3;
+
+  margin-bottom: 40px;
+}
+.hero__link {
+  display: inline-block;
+  text-align: center;
+  max-width: 430px;
+  width: 100%;
+  padding: 23px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-transform: uppercase;
+  background-color: var(--main-text-color);
+}
+/* SLIDER */
+.swiper-wrapper {
+  background: rgba(21, 21, 21, 0.6);
+}
+.swiper-slide {
+  height: 100vh;
+  /* 100% висоти екрану */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* FOOTER */
+.footer {
+  background-color: var(--main-text-color);
+  padding: 50px 0 32px;
+  color: var(--second-text-color);
+}
+
+.footer__menu {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+.footer__menu-list {
+  max-width: 250px;
+}
+.footer__menu-title {
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.footer__menu-item + .footer__menu-item {
+  margin-top: 20px;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 52px;
+}
+
+.footer__copy {
+  font-size: 12px;
+  line-height: 1.3;
+  max-width: 806px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.copy__nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
